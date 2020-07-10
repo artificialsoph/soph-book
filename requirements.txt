@@ -1,4 +1,5 @@
 jupyter-book
+sphinx-thebelab
 matplotlib
 numpy
 art

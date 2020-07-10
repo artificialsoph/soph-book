@@ -5,7 +5,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
   <head>
     <meta charset="utf-8" />
-    <title>Python book &#8212; Python, Data, etcetera</title>
+    <title>Hi 👋 &#8212; Python, Data, etcetera</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" integrity="sha384-KA6wR/X5RY4zFAHpv/CnoG2UW1uogYfdnP67Uv7eULvTveboZJg0qUpmJZb5VqzN" crossorigin="anonymous">
     <link href="_static/css/index.css" rel="stylesheet">
     <link rel="stylesheet" href="_static/sphinx-book-theme.css" type="text/css" />
@@ -39,7 +39,7 @@
     <script async="async" src="_static/thebelab.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Hello" href="chapter1/hello.html" />
+    <link rel="next" title="Hello World" href="content/chapter1/hello.html" />
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="docsearch:language" content="en">
@@ -75,13 +75,19 @@
   
   <ul class="nav sidenav_l1">
   <li class="active">
-    <a href="#">Python book</a>
+    <a href="#">Hi 👋</a>
   </li>
 <li class="navbar-special">
 <p class="margin-caption">Chapter 1 Getting started</p>
 </li>
   <li class="">
-    <a href="chapter1/hello.html">Hello</a>
+    <a href="content/chapter1/hello.html">Hello World</a>
+  </li>
+<li class="navbar-special">
+<p class="margin-caption">Internal</p>
+</li>
+  <li class="">
+    <a href="content/internal/internal.html">Internal info</a>
   </li>
 </ul>
 </nav>
@@ -122,7 +128,10 @@
     
     <div class="dropdown-buttons">
         <!-- ipynb file if we had a myst markdown file -->
-        
+        <a class="dropdown-buttons"
+            href="_sources/index.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download notebook file" data-toggle="tooltip"
+                data-placement="left">.ipynb</button></a>
         <!-- Download raw file -->
         <a class="dropdown-buttons" href="_sources/index.md"><button type="button"
                 class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
@@ -143,11 +152,32 @@
 
         <!-- Launch buttons -->
 
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Launch interactive content"><i class="fas fa-rocket"></i></button>
+    <div class="dropdown-buttons">
+        
+        
+        
+        <button type="button" class="btn btn-secondary topbarbtn"
+            onclick="initThebelabSBT()" title="Launch Thebelab" data-toggle="tooltip" data-placement="left"><i
+                class="fas fa-play"></i><span style="margin-left: .4em;">Live Code</span></button>
+        
+    </div>
+</div>
+
     </div>
     <div class="d-none d-md-block col-md-2 bd-toc show">
+<div class="tocsection onthispage pt-5 pb-3">
+    <i class="fas fa-list"></i> On this page
+</div>
 
 <nav id="bd-toc-nav">
     <ul class="nav section-nav flex-column">
+    
+        <li class="nav-item toc-entry toc-h2">
+            <a href="#how-to-use-this" class="nav-link">How to use this</a>
+        </li>
     
     </ul>
 </nav>
@@ -160,18 +190,37 @@
         
               <div>
                 
-  <div class="section" id="python-book">
-<h1>Python book<a class="headerlink" href="#python-book" title="Permalink to this headline">¶</a></h1>
-<p>[intro TKTKTK]</p>
-<p>Reminder to nix: run the auto-gen with the following code</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>watchmedo shell-command <span class="se">\</span>
-    --command<span class="o">=</span><span class="s1">&#39;echo &quot;${watch_src_path}&quot;; jupyter-book build .&#39;</span> <span class="se">\</span>
-    --patterns<span class="o">=</span><span class="s2">&quot;*.ipynb;*.yml;*.md&quot;</span> <span class="se">\</span>
-    --ignore-patterns<span class="o">=</span><span class="s2">&quot;**/_build/**;**/.ipynb_checkpoints/**&quot;</span> <span class="se">\</span>
-    --recursive --wait --drop
+  <div class="section" id="hi">
+<h1>Hi 👋<a class="headerlink" href="#hi" title="Permalink to this headline">¶</a></h1>
+<p>What is this? Right now, it’s a personal experiment put together by
+<a class="reference external" href="https://github.com/artificialsoph">me</a>.</p>
+<p>I’m testing a format for writing and serving educational content built around
+python and other programming languages.</p>
+<div class="section" id="how-to-use-this">
+<h2>How to use this<a class="headerlink" href="#how-to-use-this" title="Permalink to this headline">¶</a></h2>
+<p>To the left is a sidebar that organizes all of the content. You can also proceed
+linearly through using the button on the bottom right corner.</p>
+<p>Much of the code in this document is meant to be runnable by anyone reading it.
+You don’t have to do anything to set this up, you can simply hit run under any
+cell, like the one below.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">art</span> <span class="kn">import</span> <span class="n">tprint</span>
+<span class="n">tprint</span><span class="p">(</span><span class="s2">&quot;Hi, how are you?&quot;</span><span class="p">)</span>
 </pre></div>
 </div>
+</div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>We are using free servers provided by
+<a class="reference external" href="https://mybinder.org/"><code class="docutils literal notranslate"><span class="pre">https://mybinder.org/</span></code></a> so it may take a moment for the
+server to launch and/or run.</p>
+</div>
 <div class="toctree-wrapper compound">
+</div>
+<div class="toctree-wrapper compound">
+</div>
 </div>
 </div>
 
@@ -203,7 +252,7 @@
     
     <div class='prev-next-bottom'>
         
-    <a class='right-next' id="next-link" href="chapter1/hello.html" title="next page">Hello</a>
+    <a class='right-next' id="next-link" href="content/chapter1/hello.html" title="next page">Hello World</a>
 
     </div>
     <footer class="footer mt-5 mt-md-0">

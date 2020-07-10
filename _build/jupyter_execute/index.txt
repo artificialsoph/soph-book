@@ -1,17 +1,3 @@
----
-jupytext:
-  formats: md:myst
-  text_representation:
-    extension: .md
-    format_name: myst
-    format_version: "0.8"
-    jupytext_version: 1.4.1+dev
-kernelspec:
-  display_name: Python 3
-  language: python
-  name: python3
----
-
 # Hi 👋
 
 What is this? Right now, it's a personal experiment put together by
@@ -29,13 +15,28 @@ Much of the code in this document is meant to be runnable by anyone reading it.
 You don't have to do anything to set this up, you can simply hit run under any
 cell, like the one below.
 
-```{code-cell}
 from art import tprint
 tprint("Hi, how are you?")
-```
 
 ```{note}
 We are using free servers provided by
 [`https://mybinder.org/`](https://mybinder.org/) so it may take a moment for the
 server to launch and/or run.
+```
+
+```{toctree}
+:hidden:
+:titlesonly:
+:caption: Chapter 1 Getting started
+
+content/chapter1/hello
+```
+
+
+```{toctree}
+:hidden:
+:titlesonly:
+:caption: Internal
+
+content/internal/internal.md
 ```

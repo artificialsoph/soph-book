@@ -19,3 +19,5 @@ execute:
 sphinx:
   extra_extensions:
     - sphinx_thebelab
+  config:
+    templates_path: "_templates"

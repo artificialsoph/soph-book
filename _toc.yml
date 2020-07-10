@@ -1,7 +1,7 @@
 - file: index
 
 - header: "Chapter 1 Getting started"
-- file: content/chapter1/hello
+- file: content/chapter1/01-hello-world
 
 - header: "Internal"
 - file: content/internal/internal.md

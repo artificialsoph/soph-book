@@ -29,7 +29,7 @@ server to launch and/or run.
 :titlesonly:
 :caption: Chapter 1 Getting started
 
-content/chapter1/hello
+content/chapter1/01-hello-world
 ```
 
 

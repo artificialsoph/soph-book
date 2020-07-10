@@ -1,5 +1,4 @@
-- file: intro
-- file: content
-  sections:
-    - file: markdown
-    - file: notebooks
+- file: index
+
+- header: "Chapter 1 Getting started"
+- file: content/chapter1/hello

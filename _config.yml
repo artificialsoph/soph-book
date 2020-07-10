@@ -1,8 +1,21 @@
 # Book settings
-title: My sample book
-author: The Jupyter Book Community
-logo: logo.png
+title: Python, Data, etcetera
+author: Sophie Searcy
+logo: snake.png
 
 latex:
   latex_documents:
     targetname: book.tex
+
+repository:
+  url: https://github.com/artificialsoph/soph-book
+
+launch_buttons:
+  thebelab: true
+
+execute:
+  execute_notebooks: "off"
+
+sphinx:
+  extra_extensions:
+    - sphinx_thebelab

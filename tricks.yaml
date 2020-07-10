@@ -1,0 +1,6 @@
+- watchdog.tricks.ShellCommandTrick:
+    patterns: ["*.ipynb", "*.js"]
+    recursive: true
+    wait: true
+    drop: true
+    command: "jupyter-book build ."
